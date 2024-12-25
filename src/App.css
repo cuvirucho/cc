@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+.TITULOS {
+  background-color: rgb(252, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;;
+  padding: 2rem;
+  border-bottom: solid 10px red;
+  border-radius: 0 0 10rem 10rem;
+  object-fit: contain;
+}
+
+.imgolo {
+  border-bottom: solid 10px red;
+  object-fit: contain;
+  border-radius: 50%;
+  width: 100%;
+  height: auto;
+}
+
+.Contadordecc {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(129,86,86,1) 35%, rgba(251,6,6,1) 100%);
+  width: 100%;
+  height: auto;
+  border-radius: 2rcap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas fijas */
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0rem;
+  padding: 1rem;
+}
+
+.ITE {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  padding: 2rem;
+  border-radius: 10rem;
+  margin: 0;
+  font-size: 0.9rem;
+  border: solid 5px red;
+}
+
+/* Media Queries para diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  .TITULOS {
+  
+    padding: 1rem;
+  }
+
+
+
+  .ITE {
+    font-size: 0.8rem;
+    padding: 1.5rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .TITULOS {
+   
+    padding: 0.5rem;
+  }
+
+
+  .Contadordecc {
+    grid-template-columns: repeat(2, 1fr); /* Mantén dos columnas en móviles */
+    gap: 0.5rem;
+  }
+
+  .ITE {
+    font-size: 0.7rem;
+    padding: 1rem;
+    border-radius: 5rem;
+  }
+  #ICONO {
+ font-size: 2.4rem;
+  }
+}
+
+.frse{
+  text-align: center;
+  font-size: 3rem;
+  color: red;
+}
